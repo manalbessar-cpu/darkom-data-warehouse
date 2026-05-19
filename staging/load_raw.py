@@ -3,18 +3,18 @@
 import pandas as pd
 from sqlalchemy import create_engine
 from datetime import datetime
+import os
+from dotenv import load_dotenv
 
+load_dotenv()
 # =========================
 # CONFIGURATION
 # =========================
-
-DB_USER = "postgres"
-DB_PASSWORD = "2004"
-DB_HOST = "localhost"
-DB_PORT = "5432"
-DB_NAME = "darkom_dwh"
-
-
+DB_USER=os.getenv("POSTGRES_USER")
+DB_PASSWORD=os.getenv("POSTGRES_PASSWORD")
+DB_HOST=os.getenv("POSTGRES_HOST")
+DB_PORT=os.getenv("POSTGRES_PORT")
+DB_NAME=os.getenv("POSTGRES_DB")
 
 CSV_PATH = "data/darkom-annonces-6a0a532a16460470060059 - Copie.csv"
 
