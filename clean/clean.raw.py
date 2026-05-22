@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 load_dotenv()
 
+
 DB_USER = os.getenv("POSTGRES_USER")
 DB_PASSWORD = os.getenv("POSTGRES_PASSWORD")
 DB_HOST = os.getenv("POSTGRES_HOST")
@@ -97,8 +98,7 @@ print(df[cat_cols].isnull().sum())
 
 
 
-import seaborn as sns
-import matplotlib.pyplot as plt
+
 
 cols = ["prix", "surface", "nb_chambres"]
 
