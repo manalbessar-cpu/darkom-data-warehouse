@@ -7,6 +7,7 @@ import seaborn as sns
 load_dotenv()
 
 
+
 DB_USER = os.getenv("POSTGRES_USER")
 DB_PASSWORD = os.getenv("POSTGRES_PASSWORD")
 DB_HOST = os.getenv("POSTGRES_HOST")
