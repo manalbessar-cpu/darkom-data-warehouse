@@ -16,7 +16,7 @@ DB_HOST=os.getenv("POSTGRES_HOST")
 DB_PORT=os.getenv("POSTGRES_PORT")
 DB_NAME=os.getenv("POSTGRES_DB")
 
-CSV_PATH = "data/darkom-annonces-6a0a532a16460470060059 - Copie.csv"
+CSV_PATH = r"C:\Users\manal\OneDrive\Desktop\Darkom Data Warehouse & BI Dashboard\data\darkom-annonces-6a0a532a16460470060059 - Copie.csv"
 
 TABLE_NAME = "stg_annonces"
 SCHEMA_NAME = "staging"

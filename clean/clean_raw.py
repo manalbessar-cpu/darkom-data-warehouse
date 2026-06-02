@@ -209,7 +209,7 @@ print(df.head())
 df.to_csv("clean.csv",index=False)
 
 with engine.begin() as conn:
-    with open("clean/clean.sql", "r", encoding="utf-8") as file:
+    with open(r"C:\Users\manal\OneDrive\Desktop\Darkom Data Warehouse & BI Dashboard\clean\clean.sql", "r", encoding="utf-8") as file:
         sql_script = file.read()
 
     try:
